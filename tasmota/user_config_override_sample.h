@@ -20,6 +20,8 @@
 #ifndef _USER_CONFIG_OVERRIDE_H_
 #define _USER_CONFIG_OVERRIDE_H_
 
+
+
 /*****************************************************************************************************\
  * USAGE:
  *   To modify the stock configuration without changing the my_user_config.h file:
@@ -35,6 +37,13 @@
 \*****************************************************************************************************/
 
 /*
+
+#define USE_I2C                                // Add support for I2C
+#define USE_PCF8574                            // [I2cDriver2] Enable PCF8574 I/O Expander (I2C addresses 0x20 - 0x26 and 0x39 - 0x3F) (+2k1 code)
+#define USE_PCF8574_SENSOR                  // Enable Mode1 inputs and outputs in SENSOR message (+0k2 code)
+#define USE_PCF8574_DISPLAYINPUT            // Enable Mode1 inputs display in Web page (+0k2 code)
+#define USE_PCF8574_MQTTINPUT                // Enable Mode1 MQTT message & rule process on input change detection : stat/%topic%/PCF8574_INP = 
+
 Examples :
 
 // -- Master parameter control --------------------
